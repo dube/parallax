@@ -27,6 +27,7 @@ class Layer():
     def draw(self):
         # draw two rectangles so you get the full effect. 
         # TODO: figure out how to keep these scrolling infinitely
+        #   with some kind of screen-wrap
         arcade.draw_lrwh_rectangle_textured(self.x, 0, SCREEN_WIDTH, SCREEN_HEIGHT, self.texture) 
         arcade.draw_lrwh_rectangle_textured(SCREEN_WIDTH+self.x, 0, SCREEN_WIDTH, SCREEN_HEIGHT, self.texture) 
 
